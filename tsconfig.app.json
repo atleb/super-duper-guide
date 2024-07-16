@@ -17,6 +17,14 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
+    /* shacdn -> tailwind, postcss */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
