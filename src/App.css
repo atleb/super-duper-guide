@@ -91,26 +91,26 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-  @keyframes logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    a:nth-of-type(2) .logo {
-      animation: logo-spin infinite 20s linear;
-    }
+  to {
+    transform: rotate(360deg);
   }
-  
-  .card {
-    padding: 2em;
-    color: #61dafb;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
   }
-  
-  .read-the-docs {
-    color: #888;
-  }
+}
+
+.card {
+  padding: 2em;
+  color: #61dafb;
+}
+
+.read-the-docs {
+  color: #888;
+}
