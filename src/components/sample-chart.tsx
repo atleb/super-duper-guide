@@ -10,16 +10,19 @@ import {
 } from "@/components/ui/chart";
 
 import chartData from "./../data/cal";
-// shacdn var colors defined for HSL, then set on `[data-chart=chart-r1]` by code
 const chartConfig = {
   desktop: {
     label: "Desktop",
-    //color: "#2563eb", unused dark blue
+    // shacdn var colors defined for HSL, then set on `[data-chart=chart-r1]` via JSX
     color: "hsl(var(--chart-1))",
+    /*
+     A color like 'hsl(220, 98%, 61%)' or 'var(--color-name)'
+     OR a theme object with 'light' and 'dark' keys
+     theme: { light: "#2563eb", dark: "#dc2626" },
+    */
   },
   mobile: {
     label: "Mobile",
-    //color: "#60a5fa", unused light blue
     color: "hsl(var(--chart-3))",
   },
 } satisfies ChartConfig;
