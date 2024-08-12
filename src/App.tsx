@@ -9,15 +9,16 @@ function App() {
 
   return (
     <>
-      <h1>Vite + React + Tailwind = Shacdn base</h1>
+      <h1>Vite + React + Tailwind = Shacdn base with charting</h1>
+      <Chart />
+
+      <hr />
+      <h2>Card and other</h2>
       <div className="card">
         <Button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </Button>
       </div>
-
-      <Chart />
-
       <DocsLink />
     </>
   );
