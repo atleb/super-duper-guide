@@ -16,7 +16,7 @@ Options:
   --db <path>     Specify database file path (default: prompt-database.json)
 `;
 
-async function main(): Promise<void> {
+async function main() {
   const args = process.argv.slice(2);
   const command = args[0];
 
@@ -30,7 +30,7 @@ async function main(): Promise<void> {
   const dbPath =
     dbIndex >= 0 && args.length > dbIndex + 1
       ? args[dbIndex + 1]
-      : "prompt-database.json";
+      : "raw/db.json";
 
   const tracker = new PromptTracker(dbPath);
 
@@ -57,7 +57,7 @@ async function main(): Promise<void> {
         tracker.processEntries(entries);
         logger.info("Data processed successfully");
       } catch (error) {
-        logger.error("Error processing file:", error as Error);
+        logger.error("Error processing file:", error || error.message);
       }
       break;
     }
