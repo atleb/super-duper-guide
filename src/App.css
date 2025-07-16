@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* Shacdn init - New York style, Slate base color */
 @layer base {
@@ -59,7 +57,8 @@
     --chart-5: 340 75% 55%;
   }
 }
-
+/* 
+tw4 adjust tbd
 @layer base {
   * {
     @apply border-border;
@@ -67,7 +66,8 @@
   body {
     @apply bg-background text-foreground;
   }
-}
+} 
+  */
 
 /* base sample - add to "demo" layer and adapt to TW */
 
